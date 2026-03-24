@@ -1,13 +1,19 @@
-async function initPluralRulesPage(){
+async function initPluralRulesPage() {
   const [rules, allNouns] = await Promise.all([
     fetchJSON('data/plural-rules.json'),
     fetchJSON('data/nouns-all.json')
   ]);
 
   const selectedRule = new URLSearchParams(location.search).get('rule');
+
+  const allRules = [
+    ...rules.pluralRules.defaultRules,
+    ...rules.pluralRules.patternRules
+  ];
+
   const targetRules = selectedRule
-    ? rules.pluralRules.filter(rule => rule.id === selectedRule)
-    : rules.pluralRules;
+    ? allRules.filter(rule => rule.id === selectedRule)
+    : allRules;
 
   document.getElementById('rulesList').innerHTML = targetRules.map(rule => {
     const linked = allNouns
@@ -17,13 +23,16 @@ async function initPluralRulesPage(){
     return `
       <section class="rule-box">
         <h2 style="margin-top:0">${escapeHTML(rule.title)}</h2>
-        <div class="badge" style="background:${rule.color}">
-          Plural rule
+
+        <div class="badge">
+          ${escapeHTML(rule.shortLabel || 'Plural rule')}
         </div>
-        <p>${escapeHTML(rule.description)}</p>
+
+        <p>${escapeHTML(rule.ruleLine || '')}</p>
+
         <p class="small">
           <strong>Examples:</strong>
-          ${rule.examples.map(escapeHTML).join(', ') || '—'}
+          ${rule.examples?.map(escapeHTML).join(', ') || '—'}
         </p>
 
         <div class="row">
