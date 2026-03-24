@@ -148,8 +148,8 @@ function renderNounRow(noun,ruleMap){
       <td><span class="word-pill ${noun.isException ? 'exception' : ''}" style="${wordStyle(noun,ruleMap)}">${escapeHTML(noun.word)}</span></td>
       <td>${escapeHTML(noun.english)}</td>
       <td>${escapeHTML(noun.plural)}</td>
-      <td><a class="badge" href="rules.html?rule=${encodeURIComponent(noun.genderRuleId)}">${escapeHTML(g?.title || noun.genderRuleId)}</a></td>
-      <td><a class="badge" href="rules.html?rule=${encodeURIComponent(noun.pluralRuleId)}">${escapeHTML(p?.title || noun.pluralRuleId)}</a></td>
+      <td><a class="badge" href="gender-rules.html?rule=${encodeURIComponent(noun.genderRuleId)}">${escapeHTML(g?.title || noun.genderRuleId)}</a></td>
+      <td><a class="badge" href="plural-rules.html?rule=${encodeURIComponent(noun.pluralRuleId)}">${escapeHTML(p?.title || noun.pluralRuleId)}</a></td>
       <td>${ex ? `<span class="badge exception">${escapeHTML(ex)}</span>` : '—'}</td>
       <td>${s.revisionDate || '—'}</td>
       <td>${s.nextReviewDate || '—'}</td>
