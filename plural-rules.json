@@ -13,10 +13,7 @@
         "colorKey": "default",
         "level": "beginner",
         "priority": 1,
-        "examples": [
-          "der Tisch → die Tische",
-          "das Jahr → die Jahre"
-        ]
+        "examples": ["der Tisch → die Tische", "das Jahr → die Jahre"]
       },
       {
         "id": "default-feminine-en",
@@ -30,10 +27,7 @@
         "colorKey": "default",
         "level": "beginner",
         "priority": 1,
-        "examples": [
-          "die Blume → die Blumen",
-          "die Lampe → die Lampen"
-        ]
+        "examples": ["die Blume → die Blumen", "die Lampe → die Lampen"]
       }
     ],
     "patternRules": [
@@ -49,247 +43,136 @@
         "colorKey": "no-change",
         "level": "beginner",
         "priority": 2,
-        "examples": [
-          "das Mädchen → die Mädchen",
-          "das Brötchen → die Brötchen"
-        ]
+        "examples": ["das Mädchen → die Mädchen", "das Brötchen → die Brötchen"]
       },
       {
-        "id": "plural-no-change-el",
+        "id": "plural-no-change-er-el-en",
         "screenType": "plural",
-        "title": "Many nouns ending with -el",
+        "title": "Masculine and neuter nouns ending in -er, -el, or -en",
         "shortLabel": "No change",
-        "ruleLine": "Many nouns ending in -el stay the same in plural.",
+        "ruleLine": "Masculine and neuter nouns ending in -er, -el, or -en usually stay the same in plural.",
         "appliesTo": ["masculine", "neuter"],
-        "suffixes": ["-el"],
+        "suffixes": ["-er", "-el", "-en"],
         "pluralType": "no-change",
         "colorKey": "no-change",
         "level": "beginner",
         "priority": 2,
-        "examples": [
-          "der Löffel → die Löffel",
-          "das Mittel → die Mittel"
-        ]
+        "examples": ["der Lehrer → die Lehrer", "das Fenster → die Fenster"]
       },
       {
-        "id": "plural-no-change-er",
+        "id": "plural-no-change-ge-e-neuter",
         "screenType": "plural",
-        "title": "Many nouns ending with -er",
+        "title": "Many neuter nouns with Ge-...-e",
         "shortLabel": "No change",
-        "ruleLine": "Many nouns ending in -er stay the same in plural.",
-        "appliesTo": ["masculine", "neuter"],
-        "suffixes": ["-er"],
+        "ruleLine": "Many neuter nouns starting with Ge- and ending in -e stay the same in plural.",
+        "appliesTo": ["neuter"],
+        "prefixes": ["Ge-"],
+        "suffixes": ["-e"],
         "pluralType": "no-change",
         "colorKey": "no-change",
-        "level": "beginner",
-        "priority": 2,
-        "examples": [
-          "der Lehrer → die Lehrer",
-          "das Fenster → die Fenster"
-        ]
-      },
-      {
-        "id": "plural-no-change-en",
-        "screenType": "plural",
-        "title": "Many nouns ending with -en",
-        "shortLabel": "No change",
-        "ruleLine": "Many nouns ending in -en stay the same in plural.",
-        "appliesTo": ["masculine", "neuter"],
-        "suffixes": ["-en"],
-        "pluralType": "no-change",
-        "colorKey": "no-change",
-        "level": "beginner",
-        "priority": 2,
-        "examples": [
-          "der Garten → die Gärten",
-          "das Zeichen → die Zeichen"
-        ]
-      },
-      {
-        "id": "plural-e-masculine-neuter",
-        "screenType": "plural",
-        "title": "Most masculine and neuter nouns",
-        "shortLabel": "+e",
-        "ruleLine": "Most masculine and neuter nouns form the plural with -e.",
-        "appliesTo": ["masculine", "neuter"],
-        "suffixes": [],
-        "pluralType": "-e",
-        "colorKey": "e",
-        "level": "beginner",
-        "priority": 2,
-        "examples": [
-          "der Tag → die Tage",
-          "das Bein → die Beine"
-        ]
-      },
-      {
-        "id": "plural-e-special-endings",
-        "screenType": "plural",
-        "title": "Endings that usually take -e",
-        "shortLabel": "+e",
-        "ruleLine": "Nouns ending in -ig, -ling, -ich, or -eur usually take -e in plural.",
-        "appliesTo": ["masculine"],
-        "suffixes": ["-ig", "-ling", "-ich", "-eur"],
-        "pluralType": "-e",
-        "colorKey": "e",
         "level": "intermediate",
         "priority": 3,
-        "examples": [
-          "der König → die Könige",
-          "der Lehrling → die Lehrlinge"
-        ]
+        "examples": ["das Gebäude → die Gebäude", "das Gemälde → die Gemälde"]
       },
       {
-        "id": "plural-e-nis-sal",
+        "id": "plural-e-feminine-nis-sal",
         "screenType": "plural",
-        "title": "Endings -nis and -sal",
+        "title": "Feminine nouns ending in -nis or -sal",
         "shortLabel": "+e",
-        "ruleLine": "Nouns ending in -nis or -sal usually take -e in plural.",
-        "appliesTo": ["feminine", "neuter"],
+        "ruleLine": "Feminine nouns ending in -nis or -sal usually take -e in plural.",
+        "appliesTo": ["feminine"],
         "suffixes": ["-nis", "-sal"],
         "pluralType": "-e",
         "colorKey": "e",
-        "level": "intermediate",
+        "level": "beginner",
         "priority": 3,
-        "examples": [
-          "das Ergebnis → die Ergebnisse"
-        ]
+        "examples": ["die Kenntnis → die Kenntnisse"]
       },
       {
-        "id": "plural-e-umlaut-masculine-monosyllabic",
+        "id": "plural-e-umlaut-monosyllabic-masc-fem",
         "screenType": "plural",
-        "title": "Many short masculine nouns",
+        "title": "Many one-syllable masculine and feminine nouns",
         "shortLabel": "+e + umlaut",
-        "ruleLine": "Many short masculine nouns add -e and change the vowel in plural.",
+        "ruleLine": "Many one-syllable masculine and feminine nouns take -e and umlaut in plural.",
+        "appliesTo": ["masculine", "feminine"],
+        "suffixes": [],
+        "conditions": ["monosyllabic"],
+        "pluralType": "-e-umlaut",
+        "colorKey": "e-umlaut",
+        "level": "beginner",
+        "priority": 2,
+        "examples": ["der Stuhl → die Stühle", "die Hand → die Hände"]
+      },
+      {
+        "id": "plural-en-masculine-ending-e",
+        "screenType": "plural",
+        "title": "Masculine nouns ending in -e",
+        "shortLabel": "+n / +en",
+        "ruleLine": "Masculine nouns ending in -e usually take -n or -en in plural.",
         "appliesTo": ["masculine"],
-        "suffixes": [],
-        "pluralType": "-e-umlaut",
-        "colorKey": "e-umlaut",
-        "level": "beginner",
-        "priority": 2,
-        "examples": [
-          "der Stuhl → die Stühle",
-          "der Ball → die Bälle"
-        ]
-      },
-      {
-        "id": "plural-e-umlaut-feminine-small-group",
-        "screenType": "plural",
-        "title": "A small group of feminine nouns",
-        "shortLabel": "+e + umlaut",
-        "ruleLine": "A small group of feminine nouns add -e and change the vowel in plural.",
-        "appliesTo": ["feminine"],
-        "suffixes": [],
-        "pluralType": "-e-umlaut",
-        "colorKey": "e-umlaut",
-        "level": "intermediate",
-        "priority": 4,
-        "examples": [
-          "die Hand → die Hände",
-          "die Wand → die Wände"
-        ]
-      },
-      {
-        "id": "plural-en-feminine",
-        "screenType": "plural",
-        "title": "Almost all feminine nouns",
-        "shortLabel": "+(e)n",
-        "ruleLine": "Almost all feminine nouns take -(e)n in plural.",
-        "appliesTo": ["feminine"],
-        "suffixes": [],
-        "pluralType": "-(e)n",
-        "colorKey": "en",
-        "level": "beginner",
-        "priority": 2,
-        "examples": [
-          "die Frau → die Frauen",
-          "die Schule → die Schulen"
-        ]
-      },
-      {
-        "id": "plural-n-ending-e",
-        "screenType": "plural",
-        "title": "Ending with -e",
-        "shortLabel": "+n",
-        "ruleLine": "Many nouns ending in -e add -n in plural.",
-        "appliesTo": ["feminine", "masculine"],
         "suffixes": ["-e"],
-        "pluralType": "-n",
+        "pluralType": "-(e)n",
         "colorKey": "en",
         "level": "beginner",
         "priority": 2,
-        "examples": [
-          "die Blume → die Blumen",
-          "der Junge → die Jungen"
-        ]
+        "examples": ["der Junge → die Jungen", "der Kunde → die Kunden"]
       },
       {
-        "id": "plural-en-weak-nouns",
+        "id": "plural-er-umlaut-monosyllabic-neuter",
         "screenType": "plural",
-        "title": "Some weak masculine nouns",
-        "shortLabel": "+(e)n",
-        "ruleLine": "Some masculine nouns take -(e)n in plural.",
-        "appliesTo": ["masculine"],
-        "suffixes": [],
-        "pluralType": "-(e)n",
-        "colorKey": "en",
-        "level": "intermediate",
-        "priority": 4,
-        "examples": [
-          "der Mensch → die Menschen",
-          "der Student → die Studenten"
-        ]
-      },
-      {
-        "id": "plural-er-umlaut-neuter",
-        "screenType": "plural",
-        "title": "Some neuter nouns",
+        "title": "Many one-syllable neuter nouns",
         "shortLabel": "+er + umlaut",
-        "ruleLine": "Some neuter nouns take -er and change the vowel in plural.",
+        "ruleLine": "Many one-syllable neuter nouns take -er and umlaut in plural.",
         "appliesTo": ["neuter"],
         "suffixes": [],
+        "conditions": ["monosyllabic"],
         "pluralType": "-er-umlaut",
         "colorKey": "er-umlaut",
         "level": "beginner",
-        "priority": 3,
-        "examples": [
-          "das Kind → die Kinder",
-          "das Buch → die Bücher"
-        ]
+        "priority": 2,
+        "examples": ["das Buch → die Bücher", "das Haus → die Häuser"]
       },
       {
-        "id": "plural-er-umlaut-masculine-small-group",
+        "id": "plural-en-ant",
         "screenType": "plural",
-        "title": "A small group of masculine nouns",
-        "shortLabel": "+er + umlaut",
-        "ruleLine": "A small group of masculine nouns take -er and change the vowel in plural.",
+        "title": "Nouns ending in -ant",
+        "shortLabel": "+en",
+        "ruleLine": "Nouns ending in -ant usually take -en in plural.",
         "appliesTo": ["masculine"],
-        "suffixes": [],
-        "pluralType": "-er-umlaut",
-        "colorKey": "er-umlaut",
-        "level": "intermediate",
-        "priority": 4,
-        "examples": [
-          "der Mann → die Männer",
-          "der Wald → die Wälder"
-        ]
+        "suffixes": ["-ant"],
+        "pluralType": "-en",
+        "colorKey": "en",
+        "level": "beginner",
+        "priority": 3,
+        "examples": ["der Musikant → die Musikanten"]
       },
       {
-        "id": "plural-s-foreign-endings",
+        "id": "plural-s-a-i-o-u-y",
         "screenType": "plural",
-        "title": "Foreign words and vowel endings",
+        "title": "Nouns ending in -a, -i, -o, -u, or -y",
         "shortLabel": "+s",
-        "ruleLine": "Foreign words and nouns ending in -a, -i, -o, -u, or -y usually take -s.",
+        "ruleLine": "Nouns ending in -a, -i, -o, -u, or -y usually take -s in plural.",
         "appliesTo": ["all"],
         "suffixes": ["-a", "-i", "-o", "-u", "-y"],
         "pluralType": "-s",
         "colorKey": "s",
         "level": "beginner",
         "priority": 2,
-        "examples": [
-          "das Auto → die Autos",
-          "das Handy → die Handys"
-        ]
+        "examples": ["das Auto → die Autos", "das Handy → die Handys"]
+      },
+      {
+        "id": "plural-e-ling-ich-ig-sal-ast",
+        "screenType": "plural",
+        "title": "Nouns ending in -ling, -ich, -ig, -sal, or -ast",
+        "shortLabel": "+e",
+        "ruleLine": "Nouns ending in -ling, -ich, -ig, -sal, or -ast usually take -e in plural.",
+        "appliesTo": ["masculine", "neuter", "feminine"],
+        "suffixes": ["-ling", "-ich", "-ig", "-sal", "-ast"],
+        "pluralType": "-e",
+        "colorKey": "e",
+        "level": "beginner",
+        "priority": 3,
+        "examples": ["der Lehrling → die Lehrlinge", "der Teppich → die Teppiche"]
       }
     ],
     "exceptionNotes": [
@@ -302,19 +185,11 @@
         "colorKey": "exception"
       },
       {
-        "id": "plural-feminine-no-no-change",
+        "id": "plural-limited-rule-note",
         "screenType": "plural",
-        "title": "Feminine nouns do not usually stay the same",
-        "shortLabel": "No no-change",
-        "ruleLine": "Feminine nouns usually do not take the no-change plural.",
-        "colorKey": "exception"
-      },
-      {
-        "id": "plural-feminine-no-er-umlaut",
-        "screenType": "plural",
-        "title": "Feminine nouns do not take -er + umlaut",
-        "shortLabel": "No -er + umlaut",
-        "ruleLine": "Feminine nouns do not take -er with umlaut in plural.",
+        "title": "Some rules apply only to a limited group",
+        "shortLabel": "Limited group",
+        "ruleLine": "Some plural rules apply only to a small group of nouns, so those words are best learned individually.",
         "colorKey": "exception"
       }
     ]
