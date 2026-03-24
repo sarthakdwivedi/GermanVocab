@@ -7,6 +7,14 @@
   --accent:#2563eb;
   --chip:#eff6ff;
   --star:#f59e0b;
+    --default: #e0f2fe;
+  --no-change: #ede9fe;
+  --e: #dcfce7;
+  --e-umlaut: #bbf7d0;
+  --en: #fde68a;
+  --er-umlaut: #c7d2fe;
+  --s: #fed7aa;
+  --exception: #fecaca;
 }
 *{box-sizing:border-box}
 body{
