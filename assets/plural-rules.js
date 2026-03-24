@@ -7,8 +7,8 @@ async function initPluralRulesPage() {
   const selectedRule = new URLSearchParams(location.search).get('rule');
 
   const allRules = [
-    ...rules.pluralRules.defaultRules,
-    ...rules.pluralRules.patternRules
+    ...(rules.pluralRules?.defaultRules || []),
+    ...(rules.pluralRules?.patternRules || [])
   ];
 
   const targetRules = selectedRule
@@ -22,7 +22,7 @@ async function initPluralRulesPage() {
 
     return `
       <section class="rule-box">
-        <h2 style="margin-top:0">${escapeHTML(rule.title)}</h2>
+        <h2 style="margin-top:0">${escapeHTML(rule.title || '')}</h2>
 
         <div class="badge">
           ${escapeHTML(rule.shortLabel || 'Plural rule')}
