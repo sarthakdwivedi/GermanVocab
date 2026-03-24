@@ -1,0 +1,63 @@
+{
+  "id": "food",
+  "level": "A1",
+  "title": "Food & Drink",
+  "description": "Daily food and drink nouns.",
+  "nouns": [
+    {
+      "id": "food-das-brot",
+      "word": "das Brot",
+      "article": "das",
+      "base": "Brot",
+      "english": "bread",
+      "plural": "die Brote",
+      "genderRuleId": "exception",
+      "pluralRuleId": "plural-e",
+      "isException": true
+    },
+    {
+      "id": "food-das-wasser",
+      "word": "das Wasser",
+      "article": "das",
+      "base": "Wasser",
+      "english": "water",
+      "plural": "—",
+      "genderRuleId": "exception",
+      "pluralRuleId": "exception",
+      "isException": true
+    },
+    {
+      "id": "food-der-apfel",
+      "word": "der Apfel",
+      "article": "der",
+      "base": "Apfel",
+      "english": "apple",
+      "plural": "die Äpfel",
+      "genderRuleId": "exception",
+      "pluralRuleId": "exception",
+      "isException": true
+    },
+    {
+      "id": "food-das-broetchen",
+      "word": "das Brötchen",
+      "article": "das",
+      "base": "Brötchen",
+      "english": "bread roll",
+      "plural": "die Brötchen",
+      "genderRuleId": "neuter-diminutive-chen",
+      "pluralRuleId": "plural-no-change",
+      "isException": false
+    },
+    {
+      "id": "food-die-banane",
+      "word": "die Banane",
+      "article": "die",
+      "base": "Banane",
+      "english": "banana",
+      "plural": "die Bananen",
+      "genderRuleId": "exception",
+      "pluralRuleId": "plural-en",
+      "isException": false
+    }
+  ]
+}

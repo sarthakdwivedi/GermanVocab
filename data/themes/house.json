@@ -1,0 +1,63 @@
+{
+  "id": "house",
+  "level": "A2",
+  "title": "Home",
+  "description": "Common household nouns.",
+  "nouns": [
+    {
+      "id": "house-die-wohnung",
+      "word": "die Wohnung",
+      "article": "die",
+      "base": "Wohnung",
+      "english": "apartment",
+      "plural": "die Wohnungen",
+      "genderRuleId": "feminine-ending-ung",
+      "pluralRuleId": "plural-en",
+      "isException": false
+    },
+    {
+      "id": "house-die-zeitung",
+      "word": "die Zeitung",
+      "article": "die",
+      "base": "Zeitung",
+      "english": "newspaper",
+      "plural": "die Zeitungen",
+      "genderRuleId": "feminine-ending-ung",
+      "pluralRuleId": "plural-en",
+      "isException": false
+    },
+    {
+      "id": "house-das-hotel",
+      "word": "das Hotel",
+      "article": "das",
+      "base": "Hotel",
+      "english": "hotel",
+      "plural": "die Hotels",
+      "genderRuleId": "neuter-hotel-cafe-office-items",
+      "pluralRuleId": "plural-s",
+      "isException": false
+    },
+    {
+      "id": "house-das-buero",
+      "word": "das Büro",
+      "article": "das",
+      "base": "Büro",
+      "english": "office",
+      "plural": "die Büros",
+      "genderRuleId": "neuter-hotel-cafe-office-items",
+      "pluralRuleId": "plural-s",
+      "isException": false
+    },
+    {
+      "id": "house-die-baeckerei",
+      "word": "die Bäckerei",
+      "article": "die",
+      "base": "Bäckerei",
+      "english": "bakery",
+      "plural": "die Bäckereien",
+      "genderRuleId": "feminine-ending-ei",
+      "pluralRuleId": "plural-en",
+      "isException": false
+    }
+  ]
+}

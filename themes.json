@@ -1,0 +1,20 @@
+[
+  {
+    "id": "family",
+    "title": "Family",
+    "level": "A1",
+    "description": "Basic family vocabulary."
+  },
+  {
+    "id": "food",
+    "title": "Food & Drink",
+    "level": "A1",
+    "description": "Daily food and drink nouns."
+  },
+  {
+    "id": "house",
+    "title": "Home",
+    "level": "A2",
+    "description": "Common household nouns."
+  }
+]

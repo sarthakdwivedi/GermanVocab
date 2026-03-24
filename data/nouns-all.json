@@ -1,0 +1,167 @@
+[
+  {
+    "id": "family-der-vater",
+    "word": "der Vater",
+    "article": "der",
+    "base": "Vater",
+    "english": "father",
+    "plural": "die Väter",
+    "genderRuleId": "masculine-person",
+    "pluralRuleId": "plural-er-umlaut",
+    "isException": false
+  },
+  {
+    "id": "family-die-mutter",
+    "word": "die Mutter",
+    "article": "die",
+    "base": "Mutter",
+    "english": "mother",
+    "plural": "die Mütter",
+    "genderRuleId": "feminine-person",
+    "pluralRuleId": "plural-er-umlaut",
+    "isException": false
+  },
+  {
+    "id": "family-der-bruder",
+    "word": "der Bruder",
+    "article": "der",
+    "base": "Bruder",
+    "english": "brother",
+    "plural": "die Brüder",
+    "genderRuleId": "masculine-person",
+    "pluralRuleId": "plural-er-umlaut",
+    "isException": false
+  },
+  {
+    "id": "family-die-schwester",
+    "word": "die Schwester",
+    "article": "die",
+    "base": "Schwester",
+    "english": "sister",
+    "plural": "die Schwestern",
+    "genderRuleId": "feminine-person",
+    "pluralRuleId": "plural-en",
+    "isException": false
+  },
+  {
+    "id": "family-das-maedchen",
+    "word": "das Mädchen",
+    "article": "das",
+    "base": "Mädchen",
+    "english": "girl",
+    "plural": "die Mädchen",
+    "genderRuleId": "neuter-diminutive-chen",
+    "pluralRuleId": "plural-no-change",
+    "isException": false
+  },
+  {
+    "id": "food-das-brot",
+    "word": "das Brot",
+    "article": "das",
+    "base": "Brot",
+    "english": "bread",
+    "plural": "die Brote",
+    "genderRuleId": "exception",
+    "pluralRuleId": "plural-e",
+    "isException": true
+  },
+  {
+    "id": "food-das-wasser",
+    "word": "das Wasser",
+    "article": "das",
+    "base": "Wasser",
+    "english": "water",
+    "plural": "—",
+    "genderRuleId": "exception",
+    "pluralRuleId": "exception",
+    "isException": true
+  },
+  {
+    "id": "food-der-apfel",
+    "word": "der Apfel",
+    "article": "der",
+    "base": "Apfel",
+    "english": "apple",
+    "plural": "die Äpfel",
+    "genderRuleId": "exception",
+    "pluralRuleId": "exception",
+    "isException": true
+  },
+  {
+    "id": "food-das-broetchen",
+    "word": "das Brötchen",
+    "article": "das",
+    "base": "Brötchen",
+    "english": "bread roll",
+    "plural": "die Brötchen",
+    "genderRuleId": "neuter-diminutive-chen",
+    "pluralRuleId": "plural-no-change",
+    "isException": false
+  },
+  {
+    "id": "food-die-banane",
+    "word": "die Banane",
+    "article": "die",
+    "base": "Banane",
+    "english": "banana",
+    "plural": "die Bananen",
+    "genderRuleId": "exception",
+    "pluralRuleId": "plural-en",
+    "isException": false
+  },
+  {
+    "id": "house-die-wohnung",
+    "word": "die Wohnung",
+    "article": "die",
+    "base": "Wohnung",
+    "english": "apartment",
+    "plural": "die Wohnungen",
+    "genderRuleId": "feminine-ending-ung",
+    "pluralRuleId": "plural-en",
+    "isException": false
+  },
+  {
+    "id": "house-die-zeitung",
+    "word": "die Zeitung",
+    "article": "die",
+    "base": "Zeitung",
+    "english": "newspaper",
+    "plural": "die Zeitungen",
+    "genderRuleId": "feminine-ending-ung",
+    "pluralRuleId": "plural-en",
+    "isException": false
+  },
+  {
+    "id": "house-das-hotel",
+    "word": "das Hotel",
+    "article": "das",
+    "base": "Hotel",
+    "english": "hotel",
+    "plural": "die Hotels",
+    "genderRuleId": "neuter-hotel-cafe-office-items",
+    "pluralRuleId": "plural-s",
+    "isException": false
+  },
+  {
+    "id": "house-das-buero",
+    "word": "das Büro",
+    "article": "das",
+    "base": "Büro",
+    "english": "office",
+    "plural": "die Büros",
+    "genderRuleId": "neuter-hotel-cafe-office-items",
+    "pluralRuleId": "plural-s",
+    "isException": false
+  },
+  {
+    "id": "house-die-baeckerei",
+    "word": "die Bäckerei",
+    "article": "die",
+    "base": "Bäckerei",
+    "english": "bakery",
+    "plural": "die Bäckereien",
+    "genderRuleId": "feminine-ending-ei",
+    "pluralRuleId": "plural-en",
+    "isException": false
+  }
+]

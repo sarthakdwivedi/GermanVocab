@@ -1,0 +1,165 @@
+{
+  "genderRules": [
+    {
+      "id": "masculine-person",
+      "type": "gender",
+      "category": "der",
+      "title": "People commonly marked masculine",
+      "description": "Many nouns for male people are masculine.",
+      "color": "#e0f2fe",
+      "common": true,
+      "examples": [
+        "der Vater",
+        "der Bruder",
+        "der Mann"
+      ]
+    },
+    {
+      "id": "feminine-person",
+      "type": "gender",
+      "category": "die",
+      "title": "People commonly marked feminine",
+      "description": "Many nouns for female people are feminine.",
+      "color": "#fce7f3",
+      "common": true,
+      "examples": [
+        "die Mutter",
+        "die Schwester",
+        "die Frau"
+      ]
+    },
+    {
+      "id": "feminine-ending-ung",
+      "type": "gender",
+      "category": "die",
+      "title": "Nouns ending in -ung are feminine",
+      "description": "Nouns ending in -ung are usually feminine.",
+      "color": "#f9a8d4",
+      "common": false,
+      "examples": [
+        "die Zeitung",
+        "die Wohnung"
+      ]
+    },
+    {
+      "id": "feminine-ending-ei",
+      "type": "gender",
+      "category": "die",
+      "title": "Nouns ending in -ei are feminine",
+      "description": "Nouns ending in -ei are usually feminine.",
+      "color": "#fbcfe8",
+      "common": false,
+      "examples": [
+        "die Bäckerei",
+        "die Polizei"
+      ]
+    },
+    {
+      "id": "neuter-diminutive-chen",
+      "type": "gender",
+      "category": "das",
+      "title": "Nouns ending in -chen are neuter",
+      "description": "Diminutives ending in -chen are neuter.",
+      "color": "#ddd6fe",
+      "common": false,
+      "examples": [
+        "das Mädchen",
+        "das Brötchen"
+      ]
+    },
+    {
+      "id": "neuter-hotel-cafe-office-items",
+      "type": "gender",
+      "category": "das",
+      "title": "Some international / neutral borrowed nouns are neuter",
+      "description": "Some common borrowed nouns like Hotel or Büro are neuter.",
+      "color": "#c4b5fd",
+      "common": false,
+      "examples": [
+        "das Hotel",
+        "das Büro"
+      ]
+    },
+    {
+      "id": "exception",
+      "type": "gender",
+      "category": "exception",
+      "title": "Exception",
+      "description": "This noun should be treated as an exception for study purposes.",
+      "color": "#fecaca",
+      "common": false,
+      "examples": []
+    }
+  ],
+  "pluralRules": [
+    {
+      "id": "plural-e",
+      "type": "plural",
+      "title": "Plural with -e",
+      "description": "Many nouns form the plural with -e.",
+      "color": "#dcfce7",
+      "common": true,
+      "examples": [
+        "der Tisch → die Tische",
+        "der Tag → die Tage"
+      ]
+    },
+    {
+      "id": "plural-er-umlaut",
+      "type": "plural",
+      "title": "Plural with -er and often umlaut",
+      "description": "Some common nouns take -er and often add an umlaut.",
+      "color": "#bbf7d0",
+      "common": false,
+      "examples": [
+        "das Buch → die Bücher",
+        "der Vater → die Väter"
+      ]
+    },
+    {
+      "id": "plural-en",
+      "type": "plural",
+      "title": "Plural with -en / -n",
+      "description": "Many feminine nouns and some others take -en or -n.",
+      "color": "#fde68a",
+      "common": false,
+      "examples": [
+        "die Blume → die Blumen",
+        "die Zeitung → die Zeitungen"
+      ]
+    },
+    {
+      "id": "plural-s",
+      "type": "plural",
+      "title": "Plural with -s",
+      "description": "Some borrowed nouns and abbreviations take -s.",
+      "color": "#fdba74",
+      "common": false,
+      "examples": [
+        "das Auto → die Autos",
+        "das Hotel → die Hotels"
+      ]
+    },
+    {
+      "id": "plural-no-change",
+      "type": "plural",
+      "title": "Plural with no ending change",
+      "description": "Some nouns keep the same form in singular and plural.",
+      "color": "#e9d5ff",
+      "common": false,
+      "examples": [
+        "der Lehrer → die Lehrer",
+        "das Mädchen → die Mädchen"
+      ]
+    },
+    {
+      "id": "exception",
+      "type": "plural",
+      "title": "Exception",
+      "description": "This plural should be treated as an exception for study purposes.",
+      "color": "#fecaca",
+      "common": false,
+      "examples": []
+    }
+  ]
+}

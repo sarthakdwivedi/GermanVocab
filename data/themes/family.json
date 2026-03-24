@@ -1,0 +1,63 @@
+{
+  "id": "family",
+  "level": "A1",
+  "title": "Family",
+  "description": "Basic family vocabulary.",
+  "nouns": [
+    {
+      "id": "family-der-vater",
+      "word": "der Vater",
+      "article": "der",
+      "base": "Vater",
+      "english": "father",
+      "plural": "die Väter",
+      "genderRuleId": "masculine-person",
+      "pluralRuleId": "plural-er-umlaut",
+      "isException": false
+    },
+    {
+      "id": "family-die-mutter",
+      "word": "die Mutter",
+      "article": "die",
+      "base": "Mutter",
+      "english": "mother",
+      "plural": "die Mütter",
+      "genderRuleId": "feminine-person",
+      "pluralRuleId": "plural-er-umlaut",
+      "isException": false
+    },
+    {
+      "id": "family-der-bruder",
+      "word": "der Bruder",
+      "article": "der",
+      "base": "Bruder",
+      "english": "brother",
+      "plural": "die Brüder",
+      "genderRuleId": "masculine-person",
+      "pluralRuleId": "plural-er-umlaut",
+      "isException": false
+    },
+    {
+      "id": "family-die-schwester",
+      "word": "die Schwester",
+      "article": "die",
+      "base": "Schwester",
+      "english": "sister",
+      "plural": "die Schwestern",
+      "genderRuleId": "feminine-person",
+      "pluralRuleId": "plural-en",
+      "isException": false
+    },
+    {
+      "id": "family-das-maedchen",
+      "word": "das Mädchen",
+      "article": "das",
+      "base": "Mädchen",
+      "english": "girl",
+      "plural": "die Mädchen",
+      "genderRuleId": "neuter-diminutive-chen",
+      "pluralRuleId": "plural-no-change",
+      "isException": false
+    }
+  ]
+}
