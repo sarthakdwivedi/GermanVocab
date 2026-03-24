@@ -1,6 +1,6 @@
 async function initPluralRulesPage(){
   const [rules, allNouns] = await Promise.all([
-    fetchJSON('data/rules.json'),
+    fetchJSON('data/plural-rules.json'),
     fetchJSON('data/nouns-all.json')
   ]);
 
