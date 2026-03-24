@@ -21,7 +21,7 @@ async function initPluralRulesPage() {
       .slice(0, 20);
 
     return `
-      <section class="rule-box">
+      <section class="rule-box" style="border-left: 6px solid var(--${rule.colorKey || 'default'})">
         <h2 style="margin-top:0">${escapeHTML(rule.title || '')}</h2>
 
         <div class="badge" style="background: var(--${rule.colorKey || 'default'})">
