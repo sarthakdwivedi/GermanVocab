@@ -24,7 +24,7 @@ async function initPluralRulesPage() {
       <section class="rule-box">
         <h2 style="margin-top:0">${escapeHTML(rule.title || '')}</h2>
 
-        <div class="badge">
+        <div class="badge" style="background: var(--${rule.colorKey || 'default'})">
           ${escapeHTML(rule.shortLabel || 'Plural rule')}
         </div>
 
